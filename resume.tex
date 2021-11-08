@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+\documentclass{article}
+\usepackage{tabularx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Font Options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume Start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Rolando Fuentes} \\ \vspace{1pt}
+    \small 956-956-3140 $|$ \href{mailto:rolandofuentes.dev@gmail.com}{\underline{rolandofuentes.dev@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/rolando-fuentes/}{\textbf{LinkedIn}} $|$ \href{https://github.com/NoBaseCase}{\textbf{GitHub}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas Rio Grande Valley}{Edinburg, TX}
+      {Bachelor of Science, Computer Science}{Expected Graduation: December 2021}
+  \resumeSubHeadingListEnd
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TECHNICAL SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming Languages:} Python, JavaScript, HTML/CSS \\
+        \textbf{Frameworks:} Django, Express, Bootstrap \\
+        \textbf{Database} SQL, MongoDB \\
+        \textbf{Fundamental:} Algorithms, Data Structures, Big-O Analysis of Algorithms \\ 
+        \textbf{Version Control:} Git, SVN \\ 
+        \textbf{Interdisciplinary:} Project Management, Public Speaking, Communication \\ }}
+ \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXPERIENCE
+% What did you do? -> Project goals OR what problem did you solve?
+% How did you do it? -> Skills and technologies
+% What impact did you create? -> Numbers and percentages.
+% Example: 
+% + Developed an app for matching mentor and mentees for Android and iOS platform.
+% + Successfully matched 85% of the applications and randomized the rest.
+% sdf
+% Talk about team work, initiative, soft skills.
+%  
+% Can also include personal projects, competitions, contribution to Open source.
+% make sure to list what technologies you used
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Deveoper II}{January 2021 -- Present}
+      {City of Edinburg}{Edinburg,TX}
+      \resumeItemListStart
+        \resumeItem {Intergrated version control for internal and external city projects (Git).}
+        \resumeItem {Integrated JotForms to city website to cut down on costs and reduce paper use by 15\%.}  
+        \resumeItem {Created Helpdesk for Communications Department for faster information lookup and cut down information search by 80\%.} 
+        \resumeItem {Built in-house kiosk Web application saving the IT department \$35k on their yearly budget.} 
+        \resumeItem {Created a Grants Management Reporting System that keeps tracks and reports departments spending of grants. Built with the Django web framework and utilized Metronic Bootstrap component library for the front end. \\}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Web Deveoper }{July 2017 - January 2021}
+      {City of Pharr}{Pharr,TX}
+      \resumeItemListStart
+        \resumeItem {Migrated all city websites from internal linux server to cloud based hosting provider (PLESK)}
+        \resumeItem { Created city-wide Intranet built with WordPress and deployed internally on an IIS webserver.}
+        \resumeItem {Deployed staypharr.com - Built with Express framework, MongoDB, Pug Templating Enging, Node.js} 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJECTS
+% What did you do?
+% How did you do it? -> Skills and technologies
+% What impact did you create? -> Numbers and percentages.
+%
+% Talk about team work, initiative, soft skills.
+%
+% Can also include personal projects, competitions, contribution to Open source.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Candidate-In-A-Box} $|$ \emph{Python, SQLite, Django, Boostrap}}{Spring 2021}
+          \resumeItemListStart
+            \resumeItem{Web app that informs voters on candidates running for local office. Office candidates can sign to the service and create and populate public profiles and well as be assisted with steps on how to run for office. Primary Developer and lead a group of three. }
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
